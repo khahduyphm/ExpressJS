@@ -1,0 +1,14 @@
+GET: nhận dữ liệu từ phía server(máy chủ) về phía client(người sử dụng)
+POST: gửi dữ liệu từ phía client(người sử dụng) lên server(máy chủ)     ---------  (được sử dụng trong trường hợp làm from đăng ký, đăng nhập)
+PUT: dùng để chỉnh sửa tất cả các dòng
+PATCH: chỉnh sửa từng dòng
+DELETE: xóa 
+path: là tuyến đường
+.ENV: dùng để lưu trữ các thông tin bí mật
+nodemon: lắng nghe sự thay đổi trong soursecode của bạn
+morgan: quan sát được require từ client lên server (nhằm phát hiện ra pug sớm hơn)
+
+Create -> POST
+Update -> PUT, PATCH
+Delete -> delete
+Read -> GET

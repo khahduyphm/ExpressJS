@@ -1,0 +1,21 @@
+
+c1:  
+"beautiful": "prettier --single-quote --trailing-comma all --tab-width 4 --write src/**/*.{js,json,scss}", 
+-> npm run beautiful
+
+c2:
+"beautiful": "lint-staged", 
+"lint-staged": {
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
+  },
+-> git add .
+-> npm run beautiful
+
+c3:
+ "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+-> git add .
+-> git commit -m "comment"

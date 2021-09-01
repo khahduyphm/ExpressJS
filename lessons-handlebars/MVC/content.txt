@@ -1,0 +1,5 @@
+Model(MySQL): dữ liệu của chương trình
+View: giao diện html, css
+Controller: bộ điều khiển 2 cái trên
+đầu người dùng gửi yêu cầu lên server qua routes -> Controller: tiếp nhập yêu cầu và 
+xử lý  -> lấy dữ liệu ở phần Model -> đưa dữ liệu đó cho view -> view trả về cho Controller , Controller phản hồi cho người dùng 

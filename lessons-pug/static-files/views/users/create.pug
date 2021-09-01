@@ -1,0 +1,12 @@
+extend ../layout/common
+
+block content
+
+   h1 Create user
+   //-  xxx là chữ , phone là số
+   form(action="/users/create", method="POST")
+      label Name
+      input(name="name", type="text")  
+      
+
+      button Create

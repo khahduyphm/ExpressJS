@@ -1,0 +1,18 @@
+//- có thể có nhiều layout khác nhau (layout 1 cột, layout 2 cột, layout 3 cột )
+extend ../layout/common
+
+block content
+
+    h1 user
+    //- &nbsp: có nghĩa là dấu cách 
+    a(href="/users/create") New
+
+    form(action="/users/search", method="GET", class="d-flex")
+        input(type="text", name="q", class="form-control")
+        button(class="btn btn-primary") Search
+    ul 
+      each user in users
+          li
+            span= user.name
+            span &nbsp; 
+            a(href='/users/' + user.id) View
