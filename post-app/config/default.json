@@ -1,0 +1,3 @@
+{
+	"mongoURI": "mongodb+srv://admin:admin789@posts-app.kro0p.mongodb.net/posts-app?retryWrites=true&w=majority"
+}
